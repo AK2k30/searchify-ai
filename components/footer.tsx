@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { SiDiscord, SiGithub, SiGitter } from 'react-icons/si'
+import { SiDiscord, SiGithub, SiGitter, SiLinkedin } from 'react-icons/si'  // Import SiLinkedin
 import { Button } from './ui/button'
 
 const Footer: React.FC = () => {
@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           size={'icon'}
           className="text-muted-foreground/50"
         >
-          <Link href="https://discord.gg/zRxaseCuGq" target="_blank">
+          <Link href="#" target="_blank">
             <SiDiscord size={18} />
           </Link>
         </Button>
@@ -30,8 +30,17 @@ const Footer: React.FC = () => {
           size={'icon'}
           className="text-muted-foreground/50"
         >
-          <Link href="https://git.new/morphic" target="_blank">
+          <Link href="https://github.com/AK2k30/morphic-ai" target="_blank">
             <SiGithub size={18} />
+          </Link>
+        </Button>
+        <Button
+          variant={'ghost'}
+          size={'icon'}
+          className="text-muted-foreground/50"
+        >
+          <Link href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+            <SiLinkedin size={18} color="#0077B5" />
           </Link>
         </Button>
       </div>
