@@ -100,37 +100,6 @@ Host your own live version of Morphic with Vercel or Cloudflare Pages.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmiurla%2Fmorphic&env=OPENAI_API_KEY,TAVILY_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN)
 
-### Cloudflare Pages
-
-1. Fork the repo to your GitHub.
-2. Create a Cloudflare Pages project.
-3. Select `Morphic` repo and `Next.js` preset.
-4. Set `OPENAI_API_KEY` and `TAVILY_API_KEY` env vars.
-5. Save and deploy.
-6. Cancel deployment, go to `Settings` -> `Functions` -> `Compatibility flags`, add `nodejs_compat` to preview and production.
-7. Redeploy.
-
-**The build error needs to be fixed: [issue](https://github.com/miurla/morphic/issues/114)**
-
-## 🔎 Search Engine
-
-### Setting up the Search Engine in Your Browser
-
-If you want to use Morphic as a search engine in your browser, follow these steps:
-
-1. Open your browser settings.
-2. Navigate to the search engine settings section.
-3. Select "Manage search engines and site search".
-4. Under "Site search", click on "Add".
-5. Fill in the fields as follows:
-   - **Search engine**: Morphic
-   - **Shortcut**: morphic
-   - **URL with %s in place of query**: `https://morphic.sh/search?q=%s`
-6. Click "Add" to save the new search engine.
-7. Find "Morphic" in the list of site search, click on the three dots next to it, and select "Make default".
-
-This will allow you to use Morphic as your default search engine in the browser.
-
 ## ✅ Verified models
 
 ### List of models applicable to all:
